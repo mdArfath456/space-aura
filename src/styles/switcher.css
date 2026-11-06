@@ -1,0 +1,113 @@
+/* Presentation Industry Switcher Dock */
+.industry-switcher-dock {
+  position: fixed;
+  top: 86px;
+  right: 24px;
+  z-index: 120;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.industry-switcher-trigger {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: var(--radius-full);
+  background: rgba(15, 23, 42, 0.9);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-medium);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  box-shadow: var(--shadow-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.industry-switcher-trigger:hover {
+  background: var(--bg-surface);
+  border-color: var(--color-accent);
+  transform: translateY(-1px);
+}
+
+.industry-menu-popover {
+  margin-top: 8px;
+  width: 290px;
+  background: var(--bg-glass-elevated);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-lg);
+  padding: 12px;
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  animation: popoverFade 0.2s ease-out;
+}
+
+@keyframes popoverFade {
+  from { opacity: 0; transform: translateY(-6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.industry-popover-header {
+  padding: 6px 8px 8px 8px;
+  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: 4px;
+}
+
+.industry-popover-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-tertiary);
+}
+
+.industry-popover-note {
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+.industry-option-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.industry-option-btn:hover {
+  background: var(--bg-subtle);
+  color: var(--text-primary);
+}
+
+.industry-option-btn.active {
+  background: rgba(99, 102, 241, 0.16);
+  color: #FFFFFF;
+  border-left: 3px solid var(--color-primary);
+}
+
+.industry-active-check {
+  color: var(--color-accent);
+}
+
+@media (max-width: 768px) {
+  .industry-switcher-dock {
+    top: 76px;
+    right: 16px;
+  }
+}

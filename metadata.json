@@ -1,0 +1,6 @@
+{
+  "name": "AuraSpace Systems | Smart Workspace Automation & Acoustic Architecture",
+  "description": "Intelligent office environments, acoustic architecture, smart lighting systems, modular pods, and modern workspace automation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
