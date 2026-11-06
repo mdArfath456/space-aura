@@ -25,7 +25,7 @@ export default function CookiePolicy() {
 
         <div className="legal-content-card">
           <div className="legal-demo-callout">
-            <strong>Demonstration Presentation Notice:</strong> This policy describes the minimal, client-side preferences and session storage utilized by {currentIndustry.name}.
+            <strong>Client-Side Storage Notice:</strong> This policy describes the minimal client-side preferences and session storage utilized by {currentIndustry.name}.
           </div>
 
           <section className="legal-section-block">
@@ -39,7 +39,7 @@ export default function CookiePolicy() {
             <h2 className="legal-heading">2. Categories of Storage We Use</h2>
             <ul className="legal-list">
               <li>
-                <strong>Strictly Necessary Preference Storage:</strong> We store your selected theme (dark or light mode) via <code>auraspace_theme</code> and your presentation industry vertical via <code>auraspace_industry</code> so that your visual setup persists upon reload.
+                <strong>Strictly Necessary Preference Storage:</strong> We store your selected theme (dark or light mode) via <code>auraspace_theme</code> so that your visual setup persists upon reload.
               </li>
               <li>
                 <strong>Client-Side Concierge Session:</strong> Our Smart Business Concierge stores conversational context strictly within your active browser memory so you do not lose conversation flow during your visit.
@@ -53,7 +53,7 @@ export default function CookiePolicy() {
           <section className="legal-section-block">
             <h2 className="legal-heading">3. Controlling Your Storage Preferences</h2>
             <p className="legal-paragraph">
-              You can easily clear local storage data at any time via your browser developer tools or settings menu. Disabling browser storage will simply reset the visual theme and presentation switcher to default dark mode upon page refresh.
+              You can easily clear local storage data at any time via your browser developer tools or settings menu. Disabling browser storage will simply reset the visual theme to default dark mode upon page refresh.
             </p>
           </section>
         </div>

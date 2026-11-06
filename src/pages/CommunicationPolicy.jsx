@@ -33,7 +33,7 @@ export default function CommunicationPolicy() {
 
         <div className="legal-content-card">
           <div className="legal-demo-callout">
-            <strong>Demonstration Presentation Notice:</strong> This policy governs customer communication channels, response time commitments, and WhatsApp Click-to-Chat integrations implemented on this website.
+            <strong>Official Communication Standards:</strong> This policy governs corporate communication channels, response time commitments, and WhatsApp Click-to-Chat integrations implemented across {currentIndustry.name}.
           </div>
 
           <section className="legal-section-block">

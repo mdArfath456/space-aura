@@ -25,7 +25,7 @@ export default function Privacy() {
 
         <div className="legal-content-card">
           <div className="legal-demo-callout">
-            <strong>Demonstration Presentation Notice:</strong> This privacy disclosure outlines how visitor inquiry records, contact submissions, and WhatsApp click-to-chat links are managed within {currentIndustry.name}.
+            <strong>Privacy & Data Protection Notice:</strong> This privacy disclosure outlines how visitor inquiry records, contact submissions, and communication channels are securely managed within {currentIndustry.name}.
           </div>
 
           <section className="legal-section-block">

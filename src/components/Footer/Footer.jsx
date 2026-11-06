@@ -143,7 +143,7 @@ export default function Footer() {
           <div>
             © {new Date().getFullYear()} {currentIndustry.name}. All rights reserved.
             <span style={{ display: 'block', fontSize: '0.75rem', marginTop: '4px', opacity: 0.75 }}>
-              Live Presentation Prototype: Architecture, imagery, and specifications are configurable for client demonstration.
+              Smart Workspace Automation & Acoustic Architecture. Engineered for enterprise environments.
             </span>
           </div>
 

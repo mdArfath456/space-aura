@@ -25,7 +25,7 @@ export default function Terms() {
 
         <div className="legal-content-card">
           <div className="legal-demo-callout">
-            <strong>Demonstration Presentation Notice:</strong> The terms and policies set forth below govern the demonstration website for {currentIndustry.name} and serve as an architectural template. Commercial production deployments require jurisdiction-specific legal review prior to operational contracting.
+            <strong>Official Commercial Terms:</strong> The terms and policies set forth below govern client engagement, spatial engineering consultations, and architectural specifications provided by {currentIndustry.name}.
           </div>
 
           <section className="legal-section-block">

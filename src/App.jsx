@@ -5,8 +5,6 @@ import Navbar from './components/Navbar/Navbar.jsx';
 import Footer from './components/Footer/Footer.jsx';
 import WhatsAppButton from './components/WhatsAppButton/WhatsAppButton.jsx';
 import Chatbot from './components/Chatbot/Chatbot.jsx';
-import IndustrySwitcher from './components/IndustrySwitcher/IndustrySwitcher.jsx';
-
 import Home from './pages/Home.jsx';
 import Terms from './pages/Terms.jsx';
 import Privacy from './pages/Privacy.jsx';
@@ -21,7 +19,6 @@ export default function App() {
       <BrowserRouter>
         <div className="site-wrapper">
           <Navbar />
-          <IndustrySwitcher />
           
           <Routes>
             <Route path="/" element={<Home />} />

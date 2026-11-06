@@ -4,13 +4,7 @@ import { INDUSTRIES, DEFAULT_INDUSTRY } from '../config/businessConfig.js';
 const IndustryContext = createContext(null);
 
 export function IndustryProvider({ children }) {
-  const [industryKey, setIndustryKey] = useState(() => {
-    try {
-      return localStorage.getItem('auraspace_industry') || DEFAULT_INDUSTRY;
-    } catch {
-      return DEFAULT_INDUSTRY;
-    }
-  });
+  const [industryKey, setIndustryKey] = useState(DEFAULT_INDUSTRY);
 
   const [theme, setTheme] = useState(() => {
     try {
@@ -20,15 +14,7 @@ export function IndustryProvider({ children }) {
     }
   });
 
-  const currentIndustry = INDUSTRIES[industryKey] || INDUSTRIES[DEFAULT_INDUSTRY];
-
-  useEffect(() => {
-    try {
-      localStorage.setItem('auraspace_industry', industryKey);
-    } catch {
-      // ignore
-    }
-  }, [industryKey]);
+  const currentIndustry = INDUSTRIES[industryKey] || INDUSTRIES[DEFAULT_INDUSTRY] || INDUSTRIES.workspace;
 
   useEffect(() => {
     try {
